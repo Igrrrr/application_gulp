@@ -1,0 +1,16 @@
+@import './modules/reset';
+@import './modules/variables';
+@import './modules/header';
+@import './modules/swiper';
+
+body{
+  font-family: Ubuntu;
+  font-size: 16px;
+}
+
+.wrapper {
+  //background-color: bisque;
+  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
+}

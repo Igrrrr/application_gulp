@@ -1,0 +1,64 @@
+.splide {
+  margin-top: 60px;
+
+  &__slide {
+    color: $font-white;
+  }
+}
+
+.slide {
+
+  &__container {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: visible;
+    margin-left: 20px;
+    padding: 18px 32px 18px;
+    background-color: $main-color;
+    border-radius: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__offer-text {
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: $font-black;
+    background-color: $hover-color;
+    border-radius: 5px;
+    padding: 3px 10px 4px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    color:$font-white;
+  }
+
+  &__currency {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 5px;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    background-color: $hover-color;
+    font-size: 8px;
+    color: $font-black;
+  }
+
+  &__slash {
+    font-weight: 400;
+    padding: 0 2px;
+  }
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Application</title>
+</head>
+<body>
+  <header>
+  <div class="wrapper header__wrapper">
+    <nav class="navigation">
+    <input class="burger" id="burger-toggle" type="checkbox">
+    <label class="burger__label" for="burger-toggle">
+      <span class="burger__span"></span>
+    </label>
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a href="/" class="navigation__link">Главная</a>
+      </li>
+      <li class="navigation__item">
+        <a href="/" class="navigation__link">Видео</a>
+      </li>
+      <li class="navigation__item">
+        <a href="/" class="navigation__link">Shorts</a>
+      </li>
+      <li class="navigation__item">
+        <a href="/" class="navigation__link">Трансляции</a>
+      </li>
+      <li class="navigation__item">
+        <a href="/" class="navigation__link">Плейлисты</a>
+      </li>
+      <li class="navigation__item">
+        <a href="/" class="navigation__link">Сообщество</a>
+      </li>
+    </ul>
+    <a href="javascript:void(0)" class="logo__container">
+      <img src="../img/Brilliant_small.svg" alt="logo" class="logo">
+    </a>
+    </nav>
+  </div>
+</header>
+  <div class="wrapper">
+  <section id="slider" class="splide" aria-label="Простой пример HTML Splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <a href="" class="slide__link">
+            <div class="slide__container">
+              <div class="slide__inner">
+                <span class="slide__offer-text">One time offer!</span>
+                <div class="slide__price">
+                  <span class="slide__value">50</span>
+                  <span class="slide__currency">cr</span>
+                  <span class="slide__slash">/</span>
+                  <span class="slide__usd">$5</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="splide__slide">Слайд 02</li>
+        <li class="splide__slide">Слайд 03</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+
+  
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+  <script src="./js/app.min.js"></script>
+</body>
+</html>
