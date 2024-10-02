@@ -44,6 +44,11 @@
     </nav>
   </div>
 </header>
+  <section class="hero">
+  <div class="wrapper">
+    <h1 class="hero__text">Закончились кредиты?</h1>
+  </div>
+</section>
   <div class="wrapper">
   <section id="slider" class="splide" aria-label="Простой пример HTML Splide">
     <div class="splide__track">
@@ -54,24 +59,101 @@
               <div class="slide__inner">
                 <span class="slide__offer-text">One time offer!</span>
                 <div class="slide__price">
-                  <span class="slide__value">50</span>
+                  <span class="slide__value text__short">50</span>
                   <span class="slide__currency">cr</span>
                   <span class="slide__slash">/</span>
-                  <span class="slide__usd">$5</span>
+                  <span class="slide__value text__short">$5</span>
                 </div>
               </div>
             </div>
           </a>
         </li>
-        <li class="splide__slide">Слайд 02</li>
-        <li class="splide__slide">Слайд 03</li>
+        <li class="splide__slide">
+          <a href="" class="slide__link">
+            <div class="slide__container">
+              <div class="slide__inner">
+                <span class="slide__offer-text">One time offer!</span>
+                <div class="slide__price">
+                  <span class="slide__value text__medium">150</span>
+                  <span class="slide__currency">cr</span>
+                  <span class="slide__slash">/</span>
+                  <span class="slide__value text__medium">$15</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="splide__slide">
+          <a href="" class="slide__link">
+            <div class="slide__container">
+              <div class="slide__inner">
+                <span class="slide__offer-text">One time offer!</span>
+                <div class="slide__price">
+                  <span class="slide__value text__medium">300</span>
+                  <span class="slide__currency">cr</span>
+                  <span class="slide__slash">/</span>
+                  <span class="slide__value text__medium">$30</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="splide__slide">
+          <a href="" class="slide__link">
+            <div class="slide__container">
+              <div class="slide__inner">
+                <span class="slide__offer-text">One time offer!</span>
+                <div class="slide__price">
+                  <span class="slide__value text__medium">500</span>
+                  <span class="slide__currency">cr</span>
+                  <span class="slide__slash">/</span>
+                  <span class="slide__value text__medium">$50</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="splide__slide">
+          <a href="" class="slide__link">
+            <div class="slide__container">
+              <div class="slide__inner">
+                <span class="slide__offer-text">One time offer!</span>
+                <div class="slide__price">
+                  <span class="slide__value text__long">1000</span>
+                  <span class="slide__currency">cr</span>
+                  <span class="slide__slash">/</span>
+                  <span class="slide__value text__long">$100</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
 </div>
 
-
-  
+  <div class="button__try">
+  <div class="wrapper">
+    <button class="button">Try now</button>
+  </div>
+</div>
+  <div class="sectionCheckboxAgree">
+  <div class="wrapper sectionCheckboxAgree__wrapper">
+    <input type="checkbox" id="checkboxAgree_hidden" class="checkboxAgree">
+    <label class="checkboxAgree_custom" for="checkboxAgree_hidden"></label>
+    <span class="sectionCheckboxAgree__text">
+      By clicking Checkbox you agree and accept our 
+      <span class="sectionCheckboxAgree__text_colored">
+        Privacy Policy
+      </span>
+      , and
+      <span class="sectionCheckboxAgree__text_colored">
+        Terms of use
+      </span>
+    </span>
+  </div>
+</div>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
   <script src="./js/app.min.js"></script>
 </body>

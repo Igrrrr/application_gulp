@@ -1,8 +1,20 @@
 .splide {
-  margin-top: 60px;
+  margin-top: 35px;
 
   &__slide {
     color: $font-white;
+  }
+
+  &__pagination {
+    bottom: -1rem;
+    
+    &__page {
+      background: $hover-color;
+
+      &.is-active {
+        background: $main-color;
+      }
+    }
   }
 }
 
@@ -39,7 +51,6 @@
     display: flex;
     align-items: center;
     font-weight: 700;
-    font-size: 24px;
     color:$font-white;
   }
 
@@ -52,13 +63,28 @@
     height: 17px;
     border-radius: 10px;
     background-color: $hover-color;
-    font-size: 8px;
+    font-size: 0.5rem;
     color: $font-black;
   }
 
   &__slash {
     font-weight: 400;
     padding: 0 2px;
+  }
+
+}
+
+.text {
+  &__short {
+    font-size: 1.5rem;
+  }
+
+  &__medium {
+    font-size: 1rem;
+  }
+
+  &__long {
+    font-size: 0.8rem;
   }
 }
 
