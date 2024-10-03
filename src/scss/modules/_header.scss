@@ -26,6 +26,22 @@ header {
     transition: .5s;
     line-height: 1;
   }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      margin-left: 30px;
+      width: 22px;
+    }
+
+    &-link {
+      margin-left: 30px;
+      color: $font-black;
+      cursor: pointer;
+    }
+  }
 }
 
 .burger__label {
@@ -78,16 +94,19 @@ header {
       &::after {
         transform: rotate(45deg);
         bottom: 7px;
+        background-color: $main-color;
       }
 
       &::before {
         transform: rotate(-45deg);
         top: 5px;
+        background-color: $main-color;
       }
 
       > .burger__span {
         transform: rotate(-45deg);
         top: 5px;
+        background-color: $main-color;
       }
     }
   }
@@ -96,14 +115,59 @@ header {
     position: fixed;
     left: 0;
     right: 0;
-    background-color: #151515;
-    padding-top: 300px;
+    top:0;
+    bottom: 0;
+    background-color: $main-color_background;
+    padding-top: 80px;
     z-index: -1;
     flex-direction: column;
     text-align: center;
     left: -100vw;
     right: 100vw;
+  
+  }
 
+  .profile {
+    display: grid;
+    grid-template-areas: 
+    'img text'
+    'img button';
+    grid-template-columns: min-content;
+    column-gap: 15px;
+    row-gap: 5px;
+    margin-left: 18px;
+    position: relative;
+  }
+
+  .line {
+    margin: 20px;
+    border: 1px solid $main-color;
+    
+  }
+
+  .profile__picture {
+    display: block;
+    max-width: 49px;
+    grid-area: img;
+    border-radius: 50%;
+  }
+
+  .profile__text {
+    font-weight: 700;
+    grid-area: text;
+    display: flex;
+    justify-content: start;
+  }
+
+  .profile__button {
+    grid-area: button;
+    background-color: #684677;
+    border: none;
+    color: $font-white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: min-content;
+    white-space: nowrap;
   }
 
   #burger-toggle:checked ~ .navigation__list {

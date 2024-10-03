@@ -5,7 +5,7 @@
 .button {
   width: 100%;
   background-color: $hover-color;
-  border: none;
+  border: 1px solid $hover-color;
   border-radius: 10px;
   padding: 17px 0 17px;
 

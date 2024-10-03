@@ -5,15 +5,19 @@
 @import './modules/slider';
 @import './modules/sectionButtonTry';
 @import './modules/sectionCheckboxAgree';
+@import './modules/responsibilities';
 
 body{
   font-family: Ubuntu;
   font-size: 16px;
 }
 
-.wrapper {
-  //background-color: bisque;
-  padding: 0 20px;
-  width: 320px;
-  margin: 0 auto;
+
+@media (max-width: 575px) {
+  .wrapper {
+    padding: 0 20px;
+    //width: 320px;
+    margin: 0 auto;
+  }
+
 }
