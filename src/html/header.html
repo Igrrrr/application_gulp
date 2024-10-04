@@ -1,6 +1,12 @@
 <header>
   <div class="wrapper header__wrapper">
-    <nav class="navigation">
+    <a href="/" class="logo">Logo</a>
+    @@include('./sectionNavigation.html', {})
+    <button class="header__button">
+      <span class="header__button-text">Premium</span>
+      <img src="../img/Brilliant_small.svg" alt="brilliant_small" class="header__button-img">
+    </button>
+    <!-- <nav class="navigation">
     <input class="burger" id="burger-toggle" type="checkbox">
     <label class="burger__label" for="burger-toggle">
       <span class="burger__span"></span>
@@ -42,10 +48,10 @@
         <img src="../img/login.svg" alt="navigation__item-icon" class="navigation__item-icon">
         <a href="/" class="navigation__item-link">Log out</a>
       </li>
-    </ul>
-    <a href="javascript:void(0)" class="logo__container">
+    </ul> -->
+    <!-- <a href="javascript:void(0)" class="logo__container">
       <img src="../img/Brilliant_small.svg" alt="logo" class="logo">
-    </a>
-    </nav>
+    </a> -->
+    <!-- </nav> -->
   </div>
 </header>

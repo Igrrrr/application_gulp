@@ -1,11 +1,25 @@
 .hero {
-  margin-top: 65px;
 
   &__text {
 
     font: {
       width: 700;
-      size: 20px;
+      size: 40px;
     }
+
+    text-shadow: 4px 4px 0 rgba(191, 191, 191, 0.6);
   }
+
+
 }
+// .hero {
+//   margin-top: 65px;
+
+//   &__text {
+
+//     font: {
+//       width: 700;
+//       size: 20px;
+//     }
+//   }
+// }

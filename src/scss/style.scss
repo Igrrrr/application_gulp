@@ -1,7 +1,10 @@
 @import './modules/reset';
 @import './modules/variables';
 @import './modules/header';
+@import './modules/sectionNavigation';
+@import './modules/sectionAside';
 @import './modules/hero';
+@import './modules/discount';
 @import './modules/slider';
 @import './modules/sectionButtonTry';
 @import './modules/sectionCheckboxAgree';
@@ -10,14 +13,45 @@
 body{
   font-family: Ubuntu;
   font-size: 16px;
+  //position: relative;
 }
 
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.content__wrapper {
+  //position: absolute;
+  margin: 0 auto;
+  // margin-top: 30px;
+  // padding-bottom: auto;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 30px;
+  // display: flex;
+  // flex-direction: row-reverse;
+  // gap: 30px;
+  // height: calc(100vh - 130px)
+  //bottom: 0;
+}
+
+.main__wrapper {
+  max-width: 870px;
+}
+
+.line {
+  margin-top: 20px;
+  border: 1px solid  rgba(149, 100, 170, 0.2);
+}
 
 @media (max-width: 575px) {
   .wrapper {
     padding: 0 20px;
     //width: 320px;
-    margin: 0 auto;
+    //margin: 0 auto;
   }
 
 }

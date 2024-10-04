@@ -1,0 +1,33 @@
+.discount {
+  margin-top: 30px;
+
+  &__wrapper {
+    padding: 13px;
+    background-color:#C15CA1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__amount {
+    color: $hover-color;
+    font-size: 40px;
+    text-shadow: 
+    1px 1px 1px $font-white,   /* Тень справа вниз */
+    -1px 1px 1px $font-white,  /* Тень слева вниз */
+    1px -1px 1px $font-white,  /* Тень справа вверх */
+    -1px -1px 1px $font-white; /* Тень слева вверх */
+  }
+
+  &__countdown {
+
+    margin-left: 38px;
+    border: none;
+    border-radius: 5px;
+   
+    &-text {
+      color: $font-white;
+      margin-left: 31px;
+    }
+  }
+}

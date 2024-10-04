@@ -13,7 +13,22 @@
 <body>
   <header>
   <div class="wrapper header__wrapper">
+    <a href="/" class="logo">Logo</a>
     <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item">
+      <a href="" class="navigation__link">People nearby</a>
+    </li>
+    <li class="navigation__item">
+      <a href="" class="navigation__link">Search</a>
+    </li>
+  </ul>
+</nav>
+    <button class="header__button">
+      <span class="header__button-text">Premium</span>
+      <img src="../img/Brilliant_small.svg" alt="brilliant_small" class="header__button-img">
+    </button>
+    <!-- <nav class="navigation">
     <input class="burger" id="burger-toggle" type="checkbox">
     <label class="burger__label" for="burger-toggle">
       <span class="burger__span"></span>
@@ -55,19 +70,85 @@
         <img src="../img/login.svg" alt="navigation__item-icon" class="navigation__item-icon">
         <a href="/" class="navigation__item-link">Log out</a>
       </li>
-    </ul>
-    <a href="javascript:void(0)" class="logo__container">
+    </ul> -->
+    <!-- <a href="javascript:void(0)" class="logo__container">
       <img src="../img/Brilliant_small.svg" alt="logo" class="logo">
-    </a>
-    </nav>
+    </a> -->
+    <!-- </nav> -->
   </div>
 </header>
-  <section class="hero">
+  
+  <div class="wrapper content__wrapper">
+    <aside class="sidebar">
+  <div class="sidebar__wrapper">
+    <input class="burger" id="burger-toggle" type="checkbox">
+    <label class="burger__label" for="burger-toggle">
+      <span class="burger__span"></span>
+    </label>
+    <div class="profile">
+      <img src="../img/pictur.png" alt="profile__picture" class="profile__picture">
+      <span class="profile__text">Test2412</span>
+      <button class="profile__button">GET PREMIUM</button>
+    </div>
+    <hr class="line line_aside">
+    <ul class="sidebar__list">
+      <!-- <li class="sidebar__item"> -->
+        <!-- <div class="profile">
+          <img src="../img/pictur.png" alt="profile__picture" class="profile__picture">
+          <span class="profile__text">Test2412</span>
+          <button class="profile__button">GET PREMIUM</button>
+        </div> -->
+      <!-- </li> -->
+      
+      <li class="sidebar__item">
+        <img src="../img/profile.svg" alt="sidebar__item-icon" class="sidebar__item-icon">
+        <a href="/" class="sidebar__item-link">Profile</a>
+      </li>
+      <li class="sidebar__item">
+        <img src="../img/photo.svg" alt="sidebar__item-icon" class="sidebar__item-icon">
+        <a href="/" class="sidebar__item-link">My photos</a>
+      </li>
+      <li class="sidebar__item">
+        <img src="../img/message.svg" alt="sidebar__item-icon" class="sidebar__item-icon">
+        <a href="/" class="sidebar__item-link">Messages</a>
+      </li>
+      <li class="sidebar__item">
+        <img src="../img/heart.svg" alt="sidebar__item-icon" class="sidebar__item-icon">
+        <a href="/" class="sidebar__item-link">Favorites</a>
+      </li>
+      <li class="sidebar__item">
+        <img src="../img/view.svg" alt="sidebar__item-icon" class="sidebar__item-icon">
+        <a href="/" class="sidebar__item-link">Guests</a>
+      </li>
+      <li class="sidebar__item">
+        <img src="../img/settings.svg" alt="sidebar__item-icon" class="sidebar__item-icon">
+        <a href="/" class="sidebar__item-link">Settings</a>
+      </li>
+      <li class="sidebar__item">
+        <img src="../img/login.svg" alt="sidebar__item-icon" class="sidebar__item-icon">
+        <a href="/" class="sidebar__item-link">Log out</a>
+      </li>
+    </ul>
+    <a href="javascript:void(0)" class="brilliant_small__wrapper">
+      <img src="../img/Brilliant_small.svg" alt="logot" class="brilliant_small">
+    </a>
+  </div>
+</aside>
+    <main class="wrapper main__wrapper">
+      <section class="hero">
   <div class="wrapper">
     <h1 class="hero__text">Закончились кредиты?</h1>
   </div>
 </section>
-  <div class="wrapper">
+      <hr class="line">
+      <div class="discount">
+  <div class="discount__wrapper">
+    <h2 class="discount__amount">Скидка 40%</h2>
+    <span class="discount__countdown-text">Предложение действует в течение:</span>
+    <input type="text" class="discount__countdown">
+  </div>
+</div>
+      <div class="wrapper">
   <section id="slider" class="splide" aria-label="Простой пример HTML Splide">
     <div class="splide__track">
       <ul class="splide__list">
@@ -151,12 +232,12 @@
   </section>
 </div>
 
-  <div class="button__try">
+      <div class="button__try">
   <div class="wrapper">
     <button class="button">Try now</button>
   </div>
 </div>
-  <div class="sectionCheckboxAgree">
+      <div class="sectionCheckboxAgree">
   <div class="wrapper sectionCheckboxAgree__wrapper">
     <input type="checkbox" id="checkboxAgree_hidden" class="checkboxAgree">
     <label class="checkboxAgree_custom" for="checkboxAgree_hidden"></label>
@@ -172,7 +253,7 @@
     </span>
   </div>
 </div>
-  <div class="responsibilities">
+      <div class="responsibilities">
   <div class="wrapper">
     <img src="../img/Brilliant_big.svg" alt="responsibilities" class="responsibilities__img">
     <ul class="responsibilities__list">
@@ -203,6 +284,8 @@
     </ul>
   </div>
 </div>
+    </main>
+  </div>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
   <script src="./js/app.min.js"></script>
 </body>
