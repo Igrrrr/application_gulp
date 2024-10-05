@@ -1,11 +1,17 @@
 const slider = new Splide("#slider", {
-  // breakpoints: {
-  // 	640: {
-  // 		perPage: 2,
-  // 	},
+  perPage: 4,
+  gap: "1rem",
   flickMaxPages: 1,
   arrows: false,
   gap: 40,
+  breakpoints: {
+    991: {
+      perPage: 2,
+    },
+    767: {
+      perPage: 1,
+    },
+  },
 });
 
 slider.mount();
@@ -21,6 +27,7 @@ const timer = (seconds) => {
     const secondsLeft = Math.round((endTime - Date.now()) / 1000);
     if (secondsLeft < 0) {
       clearInterval(countdown);
+      timer(seconds);
       return;
     }
     displayTimer(secondsLeft);
@@ -28,11 +35,14 @@ const timer = (seconds) => {
 };
 
 const displayTimer = (seconds) => {
+  const hours = "00";
   const minutes = Math.floor(seconds / 60);
   const remainderSeconds = seconds % 60;
 
-  const display = `${minutes} : ${
+  const display = `${hours} : ${minutes < 10 ? "0" : ""}${minutes} : ${
     remainderSeconds < 10 ? "0" : ""
   }${remainderSeconds}`;
   timerDisplay.textContent = display;
 };
+
+timer(1800);

@@ -9,8 +9,19 @@
 
     text-shadow: 4px 4px 0 rgba(191, 191, 191, 0.6);
   }
+}
 
-
+@media (max-width: 1170px) {
+  .hero__text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .hero__text {
+    margin-top: 15px;
+    font-size: 1rem;
+    text-shadow: none;
+  }
 }
 // .hero {
 //   margin-top: 65px;

@@ -1,90 +1,188 @@
 .splide {
-  margin-top: 35px;
+  display: none;
+}
+// .splide {
+//   margin-top: 35px;
 
-  &__slide {
-    color: $font-white;
-  }
+//   &__slide {
+//     color: $font-white;
+//   }
 
-  &__pagination {
-    bottom: -1rem;
+//   &__pagination {
+//     bottom: -1rem;
     
-    &__page {
-      background: $hover-color;
+//     &__page {
+//       background: $hover-color;
 
-      &.is-active {
-        background: $main-color;
+//       &.is-active {
+//         background: $main-color;
+//       }
+//     }
+//   }
+// }
+
+// .slide {
+
+//   &__container {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     overflow-x: visible;
+//     margin-left: 20px;
+//     padding: 18px 32px 18px;
+//     background-color: $main-color;
+//     border-radius: 10px;
+//   }
+
+//   &__inner {
+//     display: flex;
+//     gap: 2rem;
+//   }
+
+//   &__offer-text {
+//     text-wrap: nowrap;
+//     display: flex;
+//     align-items: center;
+//     font-size: 14px;
+//     font-weight: 700;
+//     color: $font-black;
+//     background-color: $hover-color;
+//     border-radius: 5px;
+//     padding: 3px 10px 4px;
+//   }
+
+//   &__price {
+//     display: flex;
+//     align-items: center;
+//     font-weight: 700;
+//     color:$font-white;
+//   }
+
+//   &__currency {
+//     display: inline-flex;
+//     justify-content: center;
+//     margin-left: 5px;
+//     align-items: center;
+//     width: 17px;
+//     height: 17px;
+//     border-radius: 10px;
+//     background-color: $hover-color;
+//     font-size: 0.5rem;
+//     color: $font-black;
+//   }
+
+//   &__slash {
+//     font-weight: 400;
+//     padding: 0 2px;
+//   }
+
+// }
+
+// .text {
+//   &__short {
+//     font-size: 1.5rem;
+//   }
+
+//   &__medium {
+//     font-size: 1rem;
+//   }
+
+//   &__long {
+//     font-size: 0.8rem;
+//   }
+// }
+
+@media (max-width: 767px) {
+
+  .splide {
+    display: none;
+    margin-top: 50px;
+    min-width: 320px;
+  
+    &__slide {
+      color: $font-white;
+    }
+  
+    &__pagination {
+      bottom: -1rem;
+      
+      &__page {
+        background: $hover-color;
+  
+        &.is-active {
+          background: $main-color;
+        }
       }
     }
   }
+
+  .slide {
+
+    &__container {
+      display: flex;
+      flex-direction: row-reverse;
+      overflow-x: visible;
+      margin-left: 20px;
+      padding: 18px 32px 18px;
+      background-color: $main-color;
+      border-radius: 10px;
+    }
+  
+    &__inner {
+      display: flex;
+      gap: 2rem;
+    }
+  
+    &__offer-text {
+      text-wrap: nowrap;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: $font-black;
+      background-color: $hover-color;
+      border-radius: 5px;
+      padding: 3px 10px 4px;
+    }
+  
+    &__price {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color:$font-white;
+    }
+  
+    &__currency {
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 5px;
+      align-items: center;
+      width: 17px;
+      height: 17px;
+      border-radius: 10px;
+      background-color: $hover-color;
+      font-size: 0.5rem;
+      color: $font-black;
+    }
+  
+    &__slash {
+      font-weight: 400;
+      padding: 0 2px;
+    }
+  
+  }
+  
+  .text {
+    &__short {
+      font-size: 1.5rem;
+    }
+  
+    &__medium {
+      font-size: 1rem;
+    }
+  
+    &__long {
+      font-size: 0.8rem;
+    }
+  }
+  
 }
-
-.slide {
-
-  &__container {
-    display: flex;
-    flex-direction: row-reverse;
-    overflow-x: visible;
-    margin-left: 20px;
-    padding: 18px 32px 18px;
-    background-color: $main-color;
-    border-radius: 10px;
-  }
-
-  &__inner {
-    display: flex;
-    gap: 2rem;
-  }
-
-  &__offer-text {
-    text-wrap: nowrap;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 700;
-    color: $font-black;
-    background-color: $hover-color;
-    border-radius: 5px;
-    padding: 3px 10px 4px;
-  }
-
-  &__price {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    color:$font-white;
-  }
-
-  &__currency {
-    display: inline-flex;
-    justify-content: center;
-    margin-left: 5px;
-    align-items: center;
-    width: 17px;
-    height: 17px;
-    border-radius: 10px;
-    background-color: $hover-color;
-    font-size: 0.5rem;
-    color: $font-black;
-  }
-
-  &__slash {
-    font-weight: 400;
-    padding: 0 2px;
-  }
-
-}
-
-.text {
-  &__short {
-    font-size: 1.5rem;
-  }
-
-  &__medium {
-    font-size: 1rem;
-  }
-
-  &__long {
-    font-size: 0.8rem;
-  }
-}
-

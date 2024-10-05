@@ -7,11 +7,17 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    //width: min-content;
+    flex-wrap: nowrap;
+    //flex-basis: auto;
+    max-width: 100%;
+    width: 100%;
   }
 
   &__amount {
     color: $hover-color;
-    font-size: 40px;
+    font-size: 39px;
+    letter-spacing: 1px;
     text-shadow: 
     1px 1px 1px $font-white,   /* Тень справа вниз */
     -1px 1px 1px $font-white,  /* Тень слева вниз */
@@ -20,14 +26,81 @@
   }
 
   &__countdown {
-
+    padding: 8px 18px;
+    background-color: $font-white;
     margin-left: 38px;
     border: none;
     border-radius: 5px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
    
     &-text {
       color: $font-white;
+      font-weight: 700;
       margin-left: 31px;
     }
+  }
+}
+
+@media (max-width: 1170px) {
+  .discount {
+
+    &__wrapper {
+      //max-width: min-content;
+    }
+
+    &__amount {
+      font-size: 2rem;
+    }
+
+    &__countdown {
+      padding: 8px;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+
+      &-text {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .discount {
+
+    &__wrapper {
+      display: grid;
+      grid-template-areas: 
+      'amount amount'
+      'text countdown';
+      gap: 1rem;
+    }
+
+    &__amount {
+      grid-area: amount;
+      margin: 0 auto;
+    }
+
+    &__countdown {
+      grid-area: countdown;
+      //line-height: 1.5rem;
+      margin: 0;
+
+      &-text {
+        grid-area: text;
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .discount {
+    display: none;
   }
 }

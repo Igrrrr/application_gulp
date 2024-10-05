@@ -11,7 +11,7 @@
   <title>Application</title>
 </head>
 <body>
-  <header>
+  <header class="header">
   <div class="wrapper header__wrapper">
     <a href="/" class="logo">Logo</a>
     <nav class="navigation">
@@ -28,12 +28,17 @@
       <span class="header__button-text">Premium</span>
       <img src="../img/Brilliant_small.svg" alt="brilliant_small" class="header__button-img">
     </button>
-    <!-- <nav class="navigation">
+    <!-- <a href="" class="header__brilliant-container">
+      <img src="../img/Brilliant_small.svg" alt="" class="header__brilliant">
+    </a> -->
+     <nav class="header__burger">
     <input class="burger" id="burger-toggle" type="checkbox">
     <label class="burger__label" for="burger-toggle">
       <span class="burger__span"></span>
     </label>
-    <ul class="navigation__list">
+    
+    
+    <!-- <ul class="navigation__list">
       <li class="navigation__item">
         <div class="profile">
           <img src="../img/pict.jpg" alt="profile__picture" class="profile__picture">
@@ -71,10 +76,11 @@
         <a href="/" class="navigation__item-link">Log out</a>
       </li>
     </ul> -->
-    <!-- <a href="javascript:void(0)" class="logo__container">
-      <img src="../img/Brilliant_small.svg" alt="logo" class="logo">
-    </a> -->
-    <!-- </nav> -->
+   
+    </nav>
+    <a href="javascript:void(0)" class="header__brilliant-container">
+      <img src="../img/Brilliant_small.svg" alt="logo" class="header__brilliant">
+    </a>
   </div>
 </header>
   
@@ -145,7 +151,7 @@
   <div class="discount__wrapper">
     <h2 class="discount__amount">Скидка 40%</h2>
     <span class="discount__countdown-text">Предложение действует в течение:</span>
-    <input type="text" class="discount__countdown">
+    <div class="discount__countdown"></div>
   </div>
 </div>
       <div class="wrapper">
@@ -232,58 +238,7 @@
   </section>
 </div>
 
-      <div class="button__try">
-  <div class="wrapper">
-    <button class="button">Try now</button>
-  </div>
-</div>
-      <div class="sectionCheckboxAgree">
-  <div class="wrapper sectionCheckboxAgree__wrapper">
-    <input type="checkbox" id="checkboxAgree_hidden" class="checkboxAgree">
-    <label class="checkboxAgree_custom" for="checkboxAgree_hidden"></label>
-    <span class="sectionCheckboxAgree__text">
-      By clicking Checkbox you agree and accept our 
-      <span class="sectionCheckboxAgree__text_colored">
-        Privacy Policy
-      </span>
-      , and
-      <span class="sectionCheckboxAgree__text_colored">
-        Terms of use
-      </span>
-    </span>
-  </div>
-</div>
-      <div class="responsibilities">
-  <div class="wrapper">
-    <img src="../img/Brilliant_big.svg" alt="responsibilities" class="responsibilities__img">
-    <ul class="responsibilities__list">
-      <li class="responsibilities__item">
-        <div class="responsibilities__item-icon-wrapper">
-          <img src="../img/message.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
-        </div>
-        <span class="responsibilities__item-text">Отправлять сообщения</span>
-      </li>
-      <li class="responsibilities__item">
-        <div class="responsibilities__item-icon-wrapper">
-          <img src="../img/view.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
-        </div>
-        <span class="responsibilities__item-text">Просматривать скрытые фото</span>
-      </li>
-      <li class="responsibilities__item">
-        <div class="responsibilities__item-icon-wrapper">
-          <img src="../img/shopping.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
-        </div>
-        <span class="responsibilities__item-text">Просматривать скрытые фото</span>
-      </li>
-      <li class="responsibilities__item">
-        <div class="responsibilities__item-icon-wrapper">
-          <img src="../img/heart.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
-        </div>
-        <span class="responsibilities__item-text">Пользоваться другими премиум функциями</span>
-      </li>
-    </ul>
-  </div>
-</div>
+      
     </main>
   </div>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
