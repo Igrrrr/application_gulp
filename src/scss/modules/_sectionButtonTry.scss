@@ -1,21 +1,26 @@
 .button__try {
-  margin-top: 49px;
+  display: none;
 }
-
-.button {
-  width: 100%;
-  background-color: $hover-color;
-  border: 1px solid $hover-color;
-  border-radius: 10px;
-  padding: 17px 0 17px;
-
-  font: {
-    weight: 700;
-    size: 1rem
+@media (max-width: 767px) {
+  .button__try {
+    margin-top: 49px;
   }
   
-  &:hover {
-    border: 1px solid $main-color;
-    color: $main-color;
+  .button {
+    width: 100%;
+    background-color: $hover-color;
+    border: 1px solid $hover-color;
+    border-radius: 10px;
+    padding: 17px 0 17px;
+  
+    font: {
+      weight: 700;
+      size: 1rem
+    }
+    
+    &:hover {
+      border: 1px solid $main-color;
+      color: $main-color;
+    }
   }
 }

@@ -13,19 +13,19 @@
 <body>
   @@include('./html/header.html', {})
   
-  <div class="wrapper content__wrapper">
+  <main class="wrapper main__wrapper">
     @@include('./html/sectionAside.html', {})
-    <main class="wrapper main__wrapper">
-      @@include('./html/hero.html', {})
-      <hr class="line">
-      @@include('./html/discount.html', {})
-      @@include('./html/slider.html', {})
-      <!-- @@include('./html/sectionButtonTry.html', {})
-      @@include('./html/sectionCheckboxAgree.html', {})
-      @@include('./html/responsibilities.html', {}) -->
-    </main>
-  </div>
+    @@include('./html/hero.html', {})
+    <hr class="line">
+    @@include('./html/discount.html', {})
+    @@include('./html/offers.html', {})
+    @@include('./html/slider.html', {})
+    @@include('./html/sectionButtonTry.html', {})
+    @@include('./html/sectionCheckboxAgree.html', {})
+    @@include('./html/responsibilities.html', {})
+  </main>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
   <script src="./js/app.min.js"></script>
 </body>
 </html>
+

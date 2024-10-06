@@ -84,7 +84,7 @@
   </div>
 </header>
   
-  <div class="wrapper content__wrapper">
+  <main class="wrapper main__wrapper">
     <aside class="sidebar">
   <div class="sidebar__wrapper">
     <input class="burger" id="burger-toggle" type="checkbox">
@@ -140,22 +140,70 @@
     </a>
   </div>
 </aside>
-    <main class="wrapper main__wrapper">
-      <section class="hero">
+    <section class="hero">
   <div class="wrapper">
     <h1 class="hero__text">Закончились кредиты?</h1>
   </div>
 </section>
-      <hr class="line">
-      <div class="discount">
+    <hr class="line">
+    <div class="discount">
   <div class="discount__wrapper">
     <h2 class="discount__amount">Скидка 40%</h2>
     <span class="discount__countdown-text">Предложение действует в течение:</span>
     <div class="discount__countdown"></div>
   </div>
 </div>
-      <div class="wrapper">
-  <section id="slider" class="splide" aria-label="Простой пример HTML Splide">
+    <div class="offers">
+  <div class="offers__wrapper">
+    <!-- <div class="offer2">offer1</div>
+    <div class="offer2">offer2</div>
+    <div class="offer2">offer3</div>
+    <div class="offer2">offer4</div>
+    <div class="offer2">offer5</div> -->
+    <div class="offer">
+      <span class="offer__text">One time offer!</span>
+      <div class="offer__price">
+        <span class="offer__rate">50</span>
+        <span class="offer__currency">cr</span>
+      </div>
+      <span class="offer__button">Buy now</span>
+    </div>
+    <div class="offer">
+      <span class="offer__text">One time offer!</span>
+      <div class="offer__price">
+        <span class="offer__rate">150</span>
+        <span class="offer__currency">cr</span>
+      </div>
+      <span class="offer__button">Buy now</span>
+    </div>
+    <div class="offer">
+      <span class="offer__text">One time offer!</span>
+      <div class="offer__price">
+        <span class="offer__rate">300</span>
+        <span class="offer__currency">cr</span>
+      </div>
+      <span class="offer__button">Buy now</span>
+    </div>
+    <div class="offer">
+      <span class="offer__text">One time offer!</span>
+      <div class="offer__price">
+        <span class="offer__rate">500</span>
+        <span class="offer__currency">cr</span>
+      </div>
+      <span class="offer__button">Buy now</span>
+    </div>
+    <div class="offer">
+      <span class="offer__text">One time offer!</span>
+      <div class="offer__price">
+        <span class="offer__rate">1000</span>
+        <span class="offer__currency">cr</span>
+      </div>
+      <span class="offer__button">Buy now</span>
+    </div>
+  </div>
+</div>
+    <div class="wrapper">
+  <section id="slider" class="splide" aria-label="">
     <div class="splide__track">
       <ul class="splide__list">
         <li class="splide__slide">
@@ -238,10 +286,61 @@
   </section>
 </div>
 
-      
-    </main>
+    <div class="button__try">
+  <div class="wrapper">
+    <button class="button">Try now</button>
   </div>
+</div>
+    <div class="sectionCheckboxAgree">
+  <div class="wrapper sectionCheckboxAgree__wrapper">
+    <input type="checkbox" id="checkboxAgree_hidden" class="checkboxAgree">
+    <label class="checkboxAgree_custom" for="checkboxAgree_hidden"></label>
+    <span class="sectionCheckboxAgree__text">
+      By clicking Checkbox you agree and accept our 
+      <span class="sectionCheckboxAgree__text_colored">
+        Privacy Policy
+      </span>
+      , and
+      <span class="sectionCheckboxAgree__text_colored">
+        Terms of use
+      </span>
+    </span>
+  </div>
+</div>
+    <div class="responsibilities">
+  <div class="wrapper">
+    <img src="../img/Brilliant_big.svg" alt="responsibilities" class="responsibilities__img">
+    <ul class="responsibilities__list">
+      <li class="responsibilities__item">
+        <div class="responsibilities__item-icon-wrapper">
+          <img src="../img/message.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
+        </div>
+        <span class="responsibilities__item-text">Отправлять сообщения</span>
+      </li>
+      <li class="responsibilities__item">
+        <div class="responsibilities__item-icon-wrapper">
+          <img src="../img/view.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
+        </div>
+        <span class="responsibilities__item-text">Просматривать скрытые фото</span>
+      </li>
+      <li class="responsibilities__item">
+        <div class="responsibilities__item-icon-wrapper">
+          <img src="../img/shopping.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
+        </div>
+        <span class="responsibilities__item-text">Просматривать скрытые фото</span>
+      </li>
+      <li class="responsibilities__item">
+        <div class="responsibilities__item-icon-wrapper">
+          <img src="../img/heart.svg" alt="responsibilities__item-icon" class="responsibilities__item-icon">
+        </div>
+        <span class="responsibilities__item-text">Пользоваться другими премиум функциями</span>
+      </li>
+    </ul>
+  </div>
+</div>
+  </main>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
   <script src="./js/app.min.js"></script>
 </body>
 </html>
+

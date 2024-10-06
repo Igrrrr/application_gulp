@@ -1,0 +1,118 @@
+.offers {
+  margin-top: 26px;
+  grid-area: 4 / 2 / 5 / 3;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.offer {
+  border-radius: 10px;
+  border: 2px solid $main-color;
+  background-color:  rgba(149, 100, 170, 0.1);
+  padding: 15px 15px 17px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  white-space: nowrap;
+  position: relative;
+
+   &__text {
+    display: none;
+    position: absolute;
+    background-color: $hover-color;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    top: 0;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+   
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto;
+    top: 0;
+  }
+
+  &__rate {
+    font: {
+      size: 24px;
+      weight: 700
+    }
+  }
+
+  &__currency {
+
+    font: {
+      size: 8px;
+      weight: 700
+    }
+
+    background-color: $hover-color;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+  }
+
+  &__button {
+    margin-top: 11px;
+    padding: 17px 28px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.2);
+    ;
+    font: {
+      size: 16px;
+      weight: 500;
+    }
+
+    &:hover {
+      background-color: $hover-color;
+      color: $font-black;
+      transition: $transition;
+    }
+
+    } 
+
+  &:has(.offer__button:hover) {
+    background-color: $main-color;
+    transition: $transition;
+  }
+
+  &:has(.offer__button:hover) .offer__text{
+    display: block;
+    transition: $transition;
+  }
+
+  &:has(.offer__button:hover) .offer__rate{
+    color: $font-white;
+    transition: $transition;
+  }
+}
+
+@media(max-width: 1170px) {
+  // .offer2 {
+  //   grid-column: span 1 / span 2;
+  // }
+//   .offers {
+//     &__wrapper {
+//       display: grid;
+//       grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+//       //grid-template-rows: repeat(2, min-content);
+//       column-gap: 30px;
+//       row-gap: 20px;
+//     }
+//   }
+}

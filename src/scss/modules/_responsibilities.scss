@@ -1,5 +1,6 @@
 .responsibilities {
   margin-top: 32px;
+  grid-area: 6 / 2 / 7 / 3;
 
   &__img  {
     display: block;
@@ -53,6 +54,68 @@
       font: {
         weight: 700;
         size: 12px
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .responsibilities {
+    margin-top: 32px;
+  
+    &__img  {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    &__list {
+      margin-top: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      &-icon-wrapper {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //color: rgba(149, 100, 170, 1);
+        //border: 1px solid $main-color;
+        border-radius: 20px;
+        background-color: $main-color_background;
+        //background-color: $hover-color;
+        //opacity: 10%;
+        //z-index: -1;
+      }
+  
+      &-icon {
+        //position: relative;
+        
+        opacity: 100%;
+        opacity: 100%;
+      }
+  
+      // &-icon::after {
+      //   position: absolute;
+      //   top:0
+      // }
+  
+      
+    
+      &-text {
+        color: $main-color;
+  
+        font: {
+          weight: 700;
+          size: 12px
+        }
       }
     }
   }
