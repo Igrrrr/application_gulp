@@ -46,3 +46,13 @@ const displayTimer = (seconds) => {
 };
 
 timer(1800);
+
+const offers = document.getElementsByClassName("offer");
+for (let index = 0; index < offers.length; index++) {
+  const element = offers[index];
+  if (element.offsetWidth > 335) {
+    element.classList.add("offer__one");
+  } else if (element.offsetWidth > 213) {
+    element.classList.add("offer__two");
+  }
+}
