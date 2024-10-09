@@ -47,12 +47,23 @@ const displayTimer = (seconds) => {
 
 timer(1800);
 
-const offers = document.getElementsByClassName("offer");
-for (let index = 0; index < offers.length; index++) {
-  const element = offers[index];
-  if (element.offsetWidth > 335) {
-    element.classList.add("offer__one");
-  } else if (element.offsetWidth > 213) {
-    element.classList.add("offer__two");
-  }
-}
+const container = document.querySelector(".offers__wrapper");
+
+const cards = document.getElementsByClassName("offer");
+const resizeObserver = new ResizeObserver((entries) => {
+  entries.forEach((el) => {
+    if (el.contentRect.width > 902) {
+      el.target.classList.remove("offer__one");
+    } else if (el.contentRect.width > 336) {
+      el.target.classList.add("offer__one");
+    } else if (el.contentRect.width > 213) {
+      el.target.classList.remove("offer__one");
+      el.target.classList.add("offer__two");
+    } else {
+      el.target.classList.remove("offer__two");
+      el.target.classList.remove("offer__one");
+    }
+  });
+});
+
+[...cards].forEach((el) => resizeObserver.observe(el));

@@ -1,63 +1,317 @@
 .responsibilities {
+
   margin-top: 32px;
   grid-area: 6 / 2 / 7 / 3;
 
-  &__img  {
-    display: block;
-    margin: 0 auto;
+  &__wrapper {
+    //background-color: yellowgreen;
+    display: grid;
+    max-width: 45% !important;
+   
   }
 
   &__list {
-    margin-top: 13px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    margin: 0 auto 50px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 5px;
+    position: relative;
+    align-items: flex-start;
   }
 
+  &__img {
+    //grid-area: 2 / 2 / 3 / 4;
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    transform: translateX(-50%);
+    width: 129px;
+  }
+  
   &__item {
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    max-width: 50%;
+    text-align: center;
+    font: {
+      weight: 700;
+      size: 12px;
+    }
+    color: $main-color;
+  
+    &-message {
+      grid-area: 1 / 1 / 2 / 3;
+      margin-right: 0;
+    }
+    
+    &-heart {
+      grid-area: 1 / 3 / 2 / 5;
+      margin-left: 0;
+    }
+    
+    &-shopping {
+      grid-area: 2 / 1 / 3 / 2;
+      margin-right: 0;
+    }
+  
+    &-view {
+      grid-area: 2 / 4 / 3 / 5;
+      margin-left: -25px;
+    }
+    
+    &-message2 {
+      grid-area: 3 / 1 / 4 / 3;
+      margin-right: 0;
+    }
+    
+    &-settings {
+      grid-area: 3 / 3 / 4 / 5;
+      margin-left: 0;
+    }
+  }
 
-    &-icon-wrapper {
-      width: 30px;
-      height: 30px;
+  &__icon {
+  
+    &-wrapper {
+      padding: 15px;
+      background-color: rgba(149, 100, 170, 0.1);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      //color: rgba(149, 100, 170, 1);
-      //border: 1px solid $main-color;
-      border-radius: 20px;
-      background-color: $main-color_background;
-      //background-color: $hover-color;
-      //opacity: 10%;
-      //z-index: -1;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
     }
+  }
 
-    &-icon {
-      //position: relative;
-      
-      opacity: 100%;
-      opacity: 100%;
-    }
+  &__text {
+    margin-top: 4px;
+  }
+  
+}
+  
 
-    // &-icon::after {
-    //   position: absolute;
-    //   top:0
-    // }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+//   &__img  {
+//     display: none;
+//     position: absolute;
+//     margin: 0 auto;
+//     //grid-area: img;
+//     left: 50%;
+//     top: 50%;
+//     transform: translateX(-50%);
+//   }
+
+//   &__list {
+
+//     position: relative;
+//     //display: grid;
+//     display: none;
+//     flex-direction: column;
+//     gap: 40px;
+//     grid-template-areas:
+//     "message heart"
+//     "shopping view"
+//     "message2 settings";
+//     // ". message heart ."
+//     // "shopping . .  view"
+//     // ". message2 settings .";
+//     max-width: 50%;
+//     margin: 13px auto 0;
+//     background-color: yellowgreen;
+
+
+
+//   }
+
+//   &__item {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     //align-items: start;
+//     align-content: start;
+//     justify-content: center;
+//     text-align: center;
+//     gap: 10px;
+//     max-width: 45%;
+//     //margin: 0 auto;
+
+//     &-icon-wrapper {
+//       width: 30px;
+//       height: 30px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       //color: rgba(149, 100, 170, 1);
+//       //border: 1px solid $main-color;
+//       border-radius: 20px;
+//       background-color: $main-color_background;
+//       //background-color: $hover-color;
+//       //opacity: 10%;
+//       //z-index: -1;
+//     }
+
+//     &-icon {
+//       //position: relative;
+//       width: 20px;
+//       // opacity: 100%;
+//       // opacity: 100%;
+//     }
+
+//     // &-icon::after {
+//     //   position: absolute;
+//     //   top:0
+//     // }
 
     
   
-    &-text {
-      color: $main-color;
+//     &-text {
+//       color: $main-color;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
 
-      font: {
-        weight: 700;
-        size: 12px
-      }
-    }
-  }
-}
+//       font: {
+//         weight: 700;
+//         size: 12px
+//       }
+//     }
+
+
+
+    
+
+//   }
+// }
+
+
+// .responsibilities__item-message, .responsibilities__item-message2, .responsibilities__item-view {
+//   grid-area: message;
+//   background-color: #fff;
+//   margin-left: auto;
+// }
+
+// .responsibilities__item-heart {
+//   grid-area: heart;
+
+// }
+
+// .responsibilities__item-shopping {
+//   grid-area: shopping;
+// }
+
+// .responsibilities__item-view {
+//   grid-area: view;
+
+// }
+
+// .responsibilities__item-message2 {
+//   grid-area: message2;
+// }
+
+// .responsibilities__item-settings {
+//   grid-area: settings;
+// }
+
+
+
+// .list {
+//   display: grid;
+//   margin: 0 auto 50px;
+//   grid-template-columns: repeat(4, 25%);
+//   grid-template-rows: repeat(3, 1fr);
+//   row-gap: 15px;
+//   position: relative;
+//   align-items: flex-start;
+// }
+
+// .item {
+//   margin: 0 auto;
+//   background-color: #fff;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   max-width: 50%;
+//   text-align: center;
+//   font: {
+//     weight: 700;
+//     size: 12px;
+//   }
+//   color: $main-color;
+
+//   &__1 {
+//     grid-area: 1 / 1 / 2 / 3;
+//   }
+  
+//   &__2 {
+//     grid-area: 1 / 3 / 2 / 5;
+//   }
+  
+//   &__3 {
+//     grid-area: 2 / 1 / 3 / 2;
+//   }
+
+//   &__4 {
+//     grid-area: 2 / 4 / 3 / 5;
+//   }
+  
+//   &__5 {
+//     grid-area: 3 / 1 / 4 / 3;
+//   }
+  
+//   &__6 {
+//     grid-area: 3 / 3 / 4 / 5;
+//   }
+
+//   &__icon {
+
+//     &-wrapper {
+//       padding: 15px;
+//       background: rgba(149, 100, 170, 0.1);
+//       border-radius: 50%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       width: 50px;
+//       height: 50px;
+//       margin: 0 auto;
+//     }
+//   }
+
+//   &__text {
+//     margin-top: 4px;
+//   }
+// }
+
+// .img {
+//   //grid-area: 2 / 2 / 3 / 4;
+//   position: absolute;
+//   top: 35%;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 129px;
+// }
+
 
 @media (max-width: 767px) {
   .responsibilities {

@@ -14,12 +14,22 @@
 body{
   font-family: Ubuntu;
   font-size: 16px;
-  //position: relative;
+  position: relative;
+}
+
+.pattern-left {
+  position: absolute;
+  //background-color: aqua;
+  top: 150px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
+  //position: relative;
 }
 
 .main__wrapper {
@@ -28,7 +38,6 @@ body{
   grid-template-rows: repeat(6, auto);
   grid-column-gap: 30px;
   padding-top: 30px;
-  //align-items: start;
 }
 
 .line {
