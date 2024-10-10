@@ -1,5 +1,4 @@
 .hero {
-
   grid-area: 1 / 2 / 2 / 3;
 
   &__text {
@@ -19,20 +18,15 @@
   }
 }
 @media (max-width: 767px) {
+
+  .hero {
+    margin-top: 65px;
+  }
   .hero__text {
-    margin-top: 15px;
-    font-size: 1rem;
+    font: {
+      weight: 700;
+      size: 20px;
+    }
     text-shadow: none;
   }
 }
-// .hero {
-//   margin-top: 65px;
-
-//   &__text {
-
-//     font: {
-//       width: 700;
-//       size: 20px;
-//     }
-//   }
-// }

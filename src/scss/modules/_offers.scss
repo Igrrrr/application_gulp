@@ -86,8 +86,7 @@
       color: $font-black;
       transition: $transition;
     }
-
-    } 
+  } 
 
   &:has(.offer__button:hover) {
     background-color: $main-color;
@@ -112,7 +111,6 @@
   align-items: center;
 
   .offer__text {
-    //display: block;
     padding: 17px;
     width: min-content;
     top: 50%;
@@ -150,21 +148,6 @@
   .offer__button {
     padding: 17px 10px;
   }
-}
-
-@media(max-width: 1170px) {
-  // .offer2 {
-  //   grid-column: span 1 / span 2;
-  // }
-//   .offers {
-//     &__wrapper {
-//       display: grid;
-//       grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-//       //grid-template-rows: repeat(2, min-content);
-//       column-gap: 30px;
-//       row-gap: 20px;
-//     }
-//   }
 }
 
 @media(max-width: 767px) {

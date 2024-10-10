@@ -8,9 +8,7 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    //width: min-content;
     flex-wrap: nowrap;
-    //flex-basis: auto;
     max-width: 100%;
     width: 100%;
   }
@@ -50,10 +48,6 @@
 @media (max-width: 1170px) {
   .discount {
 
-    &__wrapper {
-      //max-width: min-content;
-    }
-
     &__amount {
       font-size: 2rem;
     }
@@ -88,8 +82,6 @@
 
     &__countdown {
       grid-area: countdown;
-      //line-height: 1.5rem;
-      //margin: 0;
       white-space: nowrap;
       width: min-content;
 
